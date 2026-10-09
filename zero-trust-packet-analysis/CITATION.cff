@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Zero Trust Enterprise Network Verification with Wireshark"
+type: software
+authors:
+  - family-names: "V S"
+    given-names: "Lohitashva"
+  - family-names: "L"
+    given-names: "Jayaprakash"
+  - family-names: "M"
+    given-names: "Vishal"
+date-released: 2026-07-26
+license: MIT
+abstract: "Packet-level evaluation of NIST SP 800-207 Zero Trust tenets: Wireshark manual verification, an offline Scapy classifier with an HTML report, and a live monitoring dashboard."

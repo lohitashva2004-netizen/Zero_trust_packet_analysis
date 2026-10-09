@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zero-trust-packet-analysis"
+version = "1.0.0"
+description = "Packet-level Zero Trust (NIST SP 800-207) analysis: Wireshark verification, offline pcap classification with an HTML report, and a live monitoring dashboard."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Lohitashva V S" },
+  { name = "Jayaprakash L" },
+  { name = "Vishal M" },
+]
+dependencies = ["scapy>=2.5", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+zt-report = "zt.report:main"
+zt-live = "zt.live:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
